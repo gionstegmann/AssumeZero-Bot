@@ -1,22 +1,22 @@
 // The trigger word that precedes most commands and will activate the bot
-exports.trigger = "physics";
+exports.trigger = "mich";
 
 // Bot owner information
 exports.owner = {
     "names": {
-        "short": "Cameron",
-        "long": "Cameron Bernhardt"
+        "short": "Gion",
+        "long": "Gion Stegmann"
     },
-    "id": "100007016509302" // ID of bot owner (for secure commands, reports, and alerts)
+    "id": "100002393918934" // ID of bot owner (for secure commands, reports, and alerts)
 };
 
 // Bot information
 exports.bot = {
     "names": {
-        "short": "AØBøt", // Will be used as 'nickname' in chat (remove if same as account name)
-        "long": "AssumeZero Bot" // Name displayed in profile on bot's Facebook account
+        "short": "Michel", // Will be used as 'nickname' in chat (remove if same as account name)
+        "long": "Michel Michel Michel" // Name displayed in profile on bot's Facebook account
     },
-    "id": "100041587845629" // Bot's ID (for security purposes in commands)
+    "id": "100060703401892" // Bot's ID (for security purposes in commands)
 };
 
 // Location of the bot repo if automatic GitHub webhook deploys are used
@@ -34,7 +34,7 @@ exports.defaultTitle = "Unnamed chat";
 
 // Heroku settings (might need to tweak some things if using another host)
 // App name
-exports.appName = "assume-bot";
+exports.appName = "calm-citadel-63341";
 
 // Server URL
 exports.serverURL = `http://${exports.appName}.herokuapp.com`;
@@ -44,13 +44,13 @@ exports.serverURL = `http://${exports.appName}.herokuapp.com`;
 exports.shouldSleep = false;
 
 // What time the bot should sleep in your timezone
-exports.localSleepTime = 3;
+exports.localSleepTime = 1;
 
 // What time the bot should wake up in your timezone
-exports.localWakeTime = 9;
+exports.localWakeTime = 6;
 
 // Your desired timezone for displaying times
-exports.timeZone = "America/New_York";
+exports.timeZone = "CET";
 
 // Time in seconds to ban users for Order 66
 exports.order66Time = 15;
@@ -81,13 +81,13 @@ exports.xkcd = {
 
 // How many points a vote is worth by default
 // See commands.js for more info
-exports.votePoints = 5;
+exports.votePoints = 1;
 
 // Default playlist to use if group has no added playlists
 exports.defaultPlaylist = {
-    "name": "Assume Zero Brain Power",
-    "user": "astrocb",
-    "uri": "4joxRVv8wzT4keFzCS3gAt"
+    "name": "This is Hamza",
+    "user": "gion",
+    "uri": "37i9dQZF1DZ06evO35X0vL"
 };
 
 // Number of top tracks to display for Spotify searches
