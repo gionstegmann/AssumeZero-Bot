@@ -1215,7 +1215,7 @@ const funcs = {
     },
     "weather": (threadId, cmatch) => {
         const city = cmatch[1];
-        request(`http://api.openweathermap.org/data/2.5/weather?appid=${credentials.WEATHER_KEY}&q=${city}&units=imperial`, (err, res, body) => {
+        request(`http://api.openweathermap.org/data/2.5/weather?appid=${credentials.WEATHER_KEY}&q=${city}&units=metric`, (err, res, body) => {
             if (!err && res.statusCode == 200) {
                 const data = JSON.parse(body);
                 const name = data.name;
@@ -1223,7 +1223,7 @@ const funcs = {
                 const weather = data.weather[0];
                 const cur = data.main;
 
-                const msg = `Weather for ${name} (${country}):\nConditions: ${weather.description}\nTemp: ${cur.temp} ºF (L-${cur.temp_min} H-${cur.temp_max})\nCloud cover: ${data.clouds.all}%`;
+                const msg = `Weather for ${name} (${country}):\nConditions: ${weather.description}\nTemp: ${cur.temp} ºC (L-${cur.temp_min} H-${cur.temp_max})\nCloud cover: ${data.clouds.all}%`;
                 utils.sendFilesFromUrl(`http://openweathermap.org/img/w/${weather.icon}.png`, threadId, msg);
             } else {
                 utils.sendError("Couldn't retrieve weather for that location.", threadId);
